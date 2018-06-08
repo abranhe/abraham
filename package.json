@@ -1,10 +1,10 @@
 {
-  "name": "clear",
+  "name": "abraham",
   "version": "1.1.0",
   "description": "An Abraham's Package",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/19cah/abraham/issues"
   },
-  "homepage": "https://github.com/19cah/abraham#readme"
+  "homepage": "https://github.com/19cah/abraham#readme",
+  "bin": {
+    "abraham": "./cli.js"
+  }
 }
