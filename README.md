@@ -1,6 +1,11 @@
-[![Carlos Abraham Logo](https://git.io/Abraham-logo)](https://19cah.com)
+[![Carlos Abraham Logo](https://avatars3.githubusercontent.com/u/21347264?s=50&v=4)](https://19cah.com)
 
-## Abraham [![CA @19cah](https://img.shields.io/badge/Author-Carlos%20Abraham%20@19cah-brightgreen.svg)](https://github.com/19cah)
+## Know me using command line
+
+![19cah](https://19cah.com/badge.svg)
+![npm](https://img.shields.io/npm/v/abraham.svg)
+![npm](https://img.shields.io/npm/dt/abraham.svg)
+
 
 ## Find it online
 
@@ -19,3 +24,26 @@ Alternatively using Yarn:
 ```md
 $ yarn add --dev abraham
 ```
+
+## Usage
+
+```
+$ abraham <Option> …
+    Options:
+      -help               View Information
+      -version            Know the version of the package
+      -social <media>     Social Network
+               github
+               twitter
+               linkedin
+```
+
+Example:
+
+```
+$ abraham -social github
+```
+
+# License
+
+[MIT](https://github.com/19cah/abraham/blob/master/LICENSE) License © [Abraham](https://github.com/19cah)
