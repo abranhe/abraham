@@ -1,0 +1,22 @@
+{
+  "name": "clear",
+  "version": "1.0.1",
+  "description": "An Abraham's Package",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/19cah/abraham.git"
+  },
+  "keywords": [
+    "abraham"
+  ],
+  "author": "Carlos Abraham <abraham@19cah.com> (https://19cah.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/19cah/abraham/issues"
+  },
+  "homepage": "https://github.com/19cah/abraham#readme"
+}
