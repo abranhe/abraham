@@ -40,7 +40,6 @@ $ npm uninstall abraham
 ## Usage
 
 ```
-<<<<<<< HEAD
 Usage: abraham <options>
 
 where <option> is:
@@ -49,13 +48,6 @@ where <option> is:
 	-version  -v              print the package version information and exit
 	-social	-s <social>     select social network: [github, twitter, linkedin] or -all
 	-contact  -c              contact me by email
-=======
-$ abraham <options> …
-    Options:
-      -help     -h              print this message
-      -version  -v              print the package version information and exit
-      -social	-s <social>     select social network  avilables [github, twitter, linkedin]
->>>>>>> a65bcb9feedf3db9e13da094a1f14b0223a6b0a9
 ```
 
 Example:
