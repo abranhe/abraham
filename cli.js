@@ -1,17 +1,16 @@
 #!/usr/bin/env node
 
+'use strict';
+
 const color = require('./colors');
 
 const help = (`
   Usage
-    $ abraham <Option> …
+    $ abraham <options> …
     Options:
-      -help               View Information
-      -version            Know the version of the package
-      -social <media>     Social Network
-               github
-               twitter
-               linkedin
+      -help     -h              print this message
+      -version  -v              print the package version information and exit
+      -social	-s <social>     select social network  avilables [github, twitter, linkedin]
 `);
 
 const ERROR = color.red + 'ERROR' + color.reset + help;
@@ -25,20 +24,23 @@ const INFO = (`
   linkedin: @19cah
 `);
 
-const version = require('./package').version;
+const pkgVersion = require('./package').version;
 
 const args = process.argv.slice(2);
 
 switch (args[0]) {
 	case '-help':
+	case '-h':
 		console.log(help);
 		break;
 
 	case '-version':
-		console.log(versio);
+	case '-v':
+		console.log(pkgVersion);
 		break;
 
 	case '-social':
+	case '-s':
 		switch (args[1]) {
 			case 'github':
 				openURL('https://www.github.com/19cah');
