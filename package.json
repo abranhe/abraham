@@ -4,7 +4,7 @@
   "description": "An Abraham's Package",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/19cah/abraham#readme",
   "bin": {
     "abraham": "./cli.js"
+  },
+  "dependencies": {
+    "xo": "^0.21.1"
   }
 }

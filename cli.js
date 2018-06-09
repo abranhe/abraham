@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-var color = require('./colors')
+const color = require('./colors');
 
-var help = (`
+const help = (`
   Usage
     $ abraham <Option> …
     Options:
@@ -14,9 +14,9 @@ var help = (`
                linkedin
 `);
 
-var ERROR = color.red + "ERROR" + color.reset + help;
+const ERROR = color.red + 'ERROR' + color.reset + help;
 
-var INFO = (`
+const INFO = (`
   Name: Carlos Abraham
   Website: www.19cah.com
   Email: abraham@19cah.com
@@ -25,46 +25,39 @@ var INFO = (`
   linkedin: @19cah
 `);
 
-var version =  require("./package").version
+const version = require('./package').version;
 
-var args = process.argv.slice(2);
-
-// if(process.argv.length >= 4){
-//   console.log(ERROR)
-// }
+const args = process.argv.slice(2);
 
 switch (args[0]) {
-   case '-help':
-     console.log(help);
-     break;
+	case '-help':
+		console.log(help);
+		break;
 
-   case '-version':
-     console.log(version);
-     break;
+	case '-version':
+		console.log(versio);
+		break;
 
-   case '-social':{
-     switch(args[1]){
-       case 'github':
-        var url = "https://github.com/19cah"
-        var start = (process.platform == 'darwin'? 'open': process.platform == 'win32'? 'start': 'xdg-open');
-        require('child_process').exec(start + ' ' + url);
-          break;
-       case 'twitter':
-        var url = "https://twitter.com/19cah"
-        var start = (process.platform == 'darwin'? 'open': process.platform == 'win32'? 'start': 'xdg-open');
-        require('child_process').exec(start + ' ' + url);
-         break;
-       case 'linkedin':
-        var url = "https://www.linkedin.com/in/19cah"
-        var start = (process.platform == 'darwin'? 'open': process.platform == 'win32'? 'start': 'xdg-open');
-         require('child_process').exec(start + ' ' + url);
-          break;
-        default:
-            console.log(INFO);
-        }
-     }
-     break;
+	case '-social':
+		switch (args[1]) {
+			case 'github':
+				openURL('https://www.github.com/19cah');
+				break;
+			case 'twitter':
+				openURL('https://twitter.com/19cah');
+				break;
+			case 'linkedin':
+				openURL('https://www.linkedin.com/in/19cah');
+				break;
+			default:
+				console.log(INFO);
+		}
+		break;
+	default:
+		console.log(ERROR);
+}
 
-   default:
-     console.log(ERROR);
- }
+function openURL(url) {
+	const start = (process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open');
+	require('child_process').exec(start + ' ' + url);
+}
