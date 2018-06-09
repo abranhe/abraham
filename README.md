@@ -2,10 +2,13 @@
 
 ## Know me using command line
 
-![19cah](https://19cah.com/badge.svg)
+[![19cah](https://19cah.com/badge.svg)](https://github.com/19cah)
 [![Build Status](https://img.shields.io/travis/19cah/abraham.svg?logo=travis)](https://travis-ci.org/19cah/abraham)
-![npm](https://img.shields.io/npm/v/abraham.svg)
-![npm](https://img.shields.io/npm/dt/abraham.svg)
+[![npm](https://img.shields.io/npm/v/abraham.svg)](https://www.npmjs.com/package/abraham)
+[![npm](https://img.shields.io/npm/dt/abraham.svg)](https://www.npmjs.com/package/abraham)
+[![license](https://img.shields.io/github/license/19cah/abraham.svg)](https://github.com/19cah/abraham/blob/master/LICENSE)
+
+
 
 
 ## Find it online
@@ -37,6 +40,7 @@ $ npm uninstall abraham
 ## Usage
 
 ```
+<<<<<<< HEAD
 Usage: abraham <options>
 
 where <option> is:
@@ -45,6 +49,13 @@ where <option> is:
 	-version  -v              print the package version information and exit
 	-social	-s <social>     select social network: [github, twitter, linkedin] or -all
 	-contact  -c              contact me by email
+=======
+$ abraham <options> …
+    Options:
+      -help     -h              print this message
+      -version  -v              print the package version information and exit
+      -social	-s <social>     select social network  avilables [github, twitter, linkedin]
+>>>>>>> a65bcb9feedf3db9e13da094a1f14b0223a6b0a9
 ```
 
 Example:
