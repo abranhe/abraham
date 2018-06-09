@@ -2,10 +2,13 @@
 
 ## Know me using command line
 
-![19cah](https://19cah.com/badge.svg)
+[![19cah](https://19cah.com/badge.svg)](https://github.com/19cah)
 [![Build Status](https://img.shields.io/travis/19cah/abraham.svg?logo=travis)](https://travis-ci.org/19cah/abraham)
-![npm](https://img.shields.io/npm/v/abraham.svg)
-![npm](https://img.shields.io/npm/dt/abraham.svg)
+[![npm](https://img.shields.io/npm/v/abraham.svg)](https://www.npmjs.com/package/abraham)
+[![npm](https://img.shields.io/npm/dt/abraham.svg)](https://www.npmjs.com/package/abraham)
+[![license](https://img.shields.io/github/license/19cah/abraham.svg)](https://github.com/19cah/abraham/blob/master/LICENSE)
+
+
 
 
 ## Find it online
@@ -29,14 +32,11 @@ $ yarn add --dev abraham
 ## Usage
 
 ```
-$ abraham <Option> …
+$ abraham <options> …
     Options:
-      -help               View Information
-      -version            Know the version of the package
-      -social <media>     Social Network
-               github
-               twitter
-               linkedin
+      -help     -h              print this message
+      -version  -v              print the package version information and exit
+      -social	-s <social>     select social network  avilables [github, twitter, linkedin]
 ```
 
 Example:
