@@ -13,30 +13,38 @@
 * [npm](https://www.npmjs.com/package/abraham)
 * [Yarn](https://yarnpkg.com/en/package/abraham)
 
-## Manual installation
+## Install
 
-You can also install ABRAHAM directly:
+Using NPM:
 
-```md
+```
 $ npm install --global abraham
 ```
 Alternatively using Yarn:
 
-```md
+```
 $ yarn add --dev abraham
+```
+
+## Uninstall
+
+You will like to uninstall it, i know 😜
+
+```
+$ npm uninstall abraham
 ```
 
 ## Usage
 
 ```
-$ abraham <Option> …
-    Options:
-      -help               View Information
-      -version            Know the version of the package
-      -social <media>     Social Network
-               github
-               twitter
-               linkedin
+Usage: abraham <options>
+
+where <option> is:
+	-help     -h              print this message
+	-info     -i <property>   select information: [name, email, web]
+	-version  -v              print the package version information and exit
+	-social	-s <social>     select social network: [github, twitter, linkedin] or -all
+	-contact  -c              contact me by email
 ```
 
 Example:

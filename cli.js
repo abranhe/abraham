@@ -2,26 +2,18 @@
 
 'use strict';
 
-const color = require('./colors');
+const color = require('./lib/colors');
+const data = require('./lib/data');
 
-const help = (`
-  Usage
-    $ abraham <options> …
-    Options:
+const USAGE = (`
+  Usage: abraham <options>
+
+  where <option> is:
       -help     -h              print this message
+      -info     -i <property>   select information: [name, email, web]
       -version  -v              print the package version information and exit
-      -social	-s <social>     select social network  avilables [github, twitter, linkedin]
-`);
-
-const ERROR = color.red + 'ERROR' + color.reset + help;
-
-const INFO = (`
-  Name: Carlos Abraham
-  Website: www.19cah.com
-  Email: abraham@19cah.com
-  Github: @19cah
-  Twitter: @19cah
-  linkedin: @19cah
+      -social	-s <social>     select social network: [github, twitter, linkedin] or -all
+      -contact  -c              contact me by email
 `);
 
 const pkgVersion = require('./package').version;
@@ -31,9 +23,25 @@ const args = process.argv.slice(2);
 switch (args[0]) {
 	case '-help':
 	case '-h':
-		console.log(help);
+		console.log(USAGE);
 		break;
 
+	case '-info':
+	case '-i':
+		switch (args[1]) {
+			case 'name':
+				console.log(data.name);
+				break;
+			case 'email':
+				console.log(data.email);
+				break;
+			case 'web':
+				console.log(data.web);
+				break;
+			default:
+				console.log('Usage: abraham -info <property>  select information about me:  [name, email, web]');
+		}
+		break;
 	case '-version':
 	case '-v':
 		console.log(pkgVersion);
@@ -43,20 +51,33 @@ switch (args[0]) {
 	case '-s':
 		switch (args[1]) {
 			case 'github':
-				openURL('https://www.github.com/19cah');
+				console.log('Github: ' + color.orange + data.github + color.reset);
+				openURL(data.github);
 				break;
 			case 'twitter':
-				openURL('https://twitter.com/19cah');
+				console.log(' Twitter: ' + color.cyan + data.twitter + color.reset);
+				openURL(data.twitter);
 				break;
 			case 'linkedin':
-				openURL('https://www.linkedin.com/in/19cah');
+				console.log('Linkedin: ' + color.blue + data.linkedin + color.reset);
+				openURL(data.linkedin);
+				break;
+			case '-all':
+				console.log('Github: ' + color.orange + data.github + color.reset + '\n' +
+							'Twitter: ' + color.cyan + data.twitter + color.reset + '\n' +
+							'Linkedin: ' + color.blue + data.linkedin + color.reset
+				);
 				break;
 			default:
-				console.log(INFO);
+				console.log('Usage: abraham -social	-s <social>     select social network: [github, twitter, linkedin]');
 		}
 		break;
+	case '-contact':
+	case '-c':
+		openURL('mailto:' + data.email);
+		break;
 	default:
-		console.log(ERROR);
+		console.log(USAGE);
 }
 
 function openURL(url) {
