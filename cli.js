@@ -2,8 +2,20 @@
 
 'use strict';
 
+const readline = require('readline');
 const color = require('./lib/colors');
 const data = require('./lib/data');
+
+
+const rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
+
+rl.question('Enter a value', (answer) => {
+	console.log('Thank you for the value: ${answer}');
+	rl.close();
+});
 
 const USAGE = (`
   Usage: abraham <options>
@@ -14,6 +26,7 @@ const USAGE = (`
       -version  -v              print the package version information and exit
       -social	-s <social>     select social network: [github, twitter, linkedin] or -all
       -contact  -c              contact me by email
+      -resume                   view resume
 `);
 
 const pkgVersion = require('./package').version;
@@ -75,6 +88,9 @@ switch (args[0]) {
 	case '-contact':
 	case '-c':
 		openURL('mailto:' + data.email);
+		break;
+	case '-resume':
+		console.log('Whould you like to see my Resume online or here? Y/N');
 		break;
 	default:
 		console.log(USAGE);
