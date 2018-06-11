@@ -2,20 +2,23 @@
 
 'use strict';
 
-const readline = require('readline');
 const color = require('./lib/colors');
 const data = require('./lib/data');
 
+const ncah = (`
+           __                           __
+          /  |                         /  |
+  ______  $$ |____    ______   ______  $$ |____    ______   _____  ____
+ /      \\ $$      \\  /      \\ /      \\ $$      \\  /      \\ /     \\/    \\
+ $$$$$$  |$$$$$$$  |/$$$$$$  |$$$$$$  |$$$$$$$  | $$$$$$  |$$$$$$ $$$$  |
+ /    $$ |$$ |  $$ |$$ |  $$/ /    $$ |$$ |  $$ | /    $$ |$$ | $$ | $$ |
+\u001B[31;1m/$$$$$$$ |$$ |__$$ |$$ |     /$$$$$$$ |$$ |  $$ |/$$$$$$$ |$$ | $$ | $$ |
+$$    $$ |$$    $$/ $$ |     $$    $$ |$$ |  $$ |$$    $$ |$$ | $$ | $$ |\u001B[0m
+ \u001B[31m$$$$$$$/ $$$$$$$/  $$/       $$$$$$$/ $$/   $$/  $$$$$$$/ $$/  $$/  $$/\u001B[0m
 
-const rl = readline.createInterface({
-	input: process.stdin,
-	output: process.stdout
-});
+Usage: abraham -help
 
-rl.question('Enter a value', (answer) => {
-	console.log('Thank you for the value: ${answer}');
-	rl.close();
-});
+`);
 
 const USAGE = (`
   Usage: abraham <options>
@@ -93,7 +96,7 @@ switch (args[0]) {
 		console.log('Whould you like to see my Resume online or here? Y/N');
 		break;
 	default:
-		console.log(USAGE);
+		console.log(ncah);
 }
 
 function openURL(url) {
