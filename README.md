@@ -46,7 +46,7 @@ where <option> is:
 	-help     -h              print this message
 	-info     -i <property>   select information: [name, email, web]
 	-version  -v              print the package version information and exit
-	-social	-s <social>     select social network: [github, twitter, linkedin] or -all
+	-social	-s <social>       select social network: [github, twitter, linkedin] or -all
 	-contact  -c              contact me by email
 ```
 
