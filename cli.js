@@ -2,11 +2,12 @@
 
 'use strict';
 
+const readline = require('readline');
 const color = require('./lib/colors');
 const data = require('./lib/data');
 
-const ncah = (`
-           __                           __
+const ncah =
+(`           __                           __
           /  |                         /  |
   ______  $$ |____    ______   ______  $$ |____    ______   _____  ____
  /      \\ $$      \\  /      \\ /      \\ $$      \\  /      \\ /     \\/    \\
@@ -16,9 +17,8 @@ const ncah = (`
 $$    $$ |$$    $$/ $$ |     $$    $$ |$$ |  $$ |$$    $$ |$$ | $$ | $$ |\u001B[0m
  \u001B[31m$$$$$$$/ $$$$$$$/  $$/       $$$$$$$/ $$/   $$/  $$$$$$$/ $$/  $$/  $$/\u001B[0m
 
-Usage: abraham -help
-
-`);
+Usage: abraham -help`
+);
 
 const USAGE = (`
   Usage: abraham <options>
@@ -93,7 +93,18 @@ switch (args[0]) {
 		openURL('mailto:' + data.email);
 		break;
 	case '-resume':
-		console.log('Whould you like to see my Resume online or here? Y/N');
+		console.log(`
+Resume Usage:
+
+abraham -resume online           view resume hosted online
+abraham -resume here             view command line interface resume
+`);
+		const rl = readline.createInterface(process.stdin, process.stdout);
+		rl.question('>>> ', answer => {
+			console.log(`your answer is ${answer}`);
+
+			rl.close();
+		});
 		break;
 	default:
 		console.log(ncah);
