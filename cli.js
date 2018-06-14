@@ -92,19 +92,18 @@ switch (args[0]) {
 	case '-c':
 		openURL('mailto:' + data.email);
 		break;
-	case '-resume':
-		console.log(`
-Resume Usage:
-
-abraham -resume online           view resume hosted online
-abraham -resume here             view command line interface resume
-`);
+	case '-resume': {
 		const rl = readline.createInterface(process.stdin, process.stdout);
-		rl.question('>>> ', answer => {
+		rl.question('Type ' + color.orange + 'terminal ' + color.reset +
+			'if you like to view my resume here. \n' +
+			'Otherwise type ' + color.orange + 'online ' + color.reset +
+			'if you want to see my resume online.\n' +
+			'>>> ', answer => {
 			console.log(`your answer is ${answer}`);
 
 			rl.close();
 		});
+	}
 		break;
 	default:
 		console.log(ncah);

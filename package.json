@@ -4,7 +4,7 @@
   "description": "An Abraham's Package",
   "main": "app.js",
   "scripts": {
-    "test": "xo"
+    "test": "xo && ava"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   "bin": {
     "abraham": "./cli.js"
   },
-  "dependencies": {
-    "xo": "^0.21.1"
+  "devDependencies": {
+    "xo": "^0.21.1",
+    "ava": "1.0.0-beta.5.1"
   }
 }
