@@ -3,7 +3,6 @@
 ## Know me using command line
 
 [![19cah](https://19cah.com/badge.svg)](https://github.com/19cah)
-[![Build Status](https://ci.19cah.com/job/abraham/badge/icon)](https://ci.19cah.com/job/abraham/)
 [![Build Status](https://img.shields.io/travis/19cah/abraham.svg?logo=travis)](https://travis-ci.org/19cah/abraham)
 [![npm](https://img.shields.io/npm/v/abraham.svg)](https://www.npmjs.com/package/abraham)
 [![npm](https://img.shields.io/npm/dt/abraham.svg)](https://www.npmjs.com/package/abraham)
