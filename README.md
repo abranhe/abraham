@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/abraham.png?compact=true)](https://nodei.co/npm/abraham/)
 
-## Know me using command line
+## Know me using command line 🎸
 
 [![19cah](https://19cah.com/badge.svg)](https://github.com/19cah)
 [![Cash Me](https://cdn.abraham.gq/badges/cash-me.svg)](https://cash.me/$19cah)
@@ -11,6 +11,14 @@
 [![npm](https://img.shields.io/npm/dt/abraham.svg)](https://www.npmjs.com/package/abraham)
 [![license](https://img.shields.io/github/license/19cah/abraham.svg)](https://github.com/19cah/abraham/blob/master/LICENSE)
 
+
+## Easier 🙀
+
+```
+$ npx abraham
+```
+
+![eg](resources/eg.png)
 
 
 ## Find it online
@@ -23,7 +31,7 @@
 Using NPM:
 
 ```
-$ npm install --global abraham
+$ npm i abraham
 ```
 Alternatively using Yarn:
 
@@ -39,24 +47,11 @@ You will like to uninstall it, i know 😜
 $ npm uninstall abraham
 ```
 
-## Usage
+# Credits
 
-```
-Usage: abraham <options>
-
-where <option> is:
-	-help     -h              print this message
-	-info     -i <property>   select information: [name, email, web]
-	-version  -v              print the package version information and exit
-	-social	-s <social>       select social network: [github, twitter, linkedin] or -all
-	-contact  -c              contact me by email
-```
-
-Example:
-
-```
-$ abraham -social github
-```
+- [Ink](https://github.com/vadimdemedes/ink): React for interactive command-line apps
+- [Ink-image](https://github.com/kevva/ink-image)
+- [Meow](https://github.com/sindresorhus/meow)
 
 # License
 
