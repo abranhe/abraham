@@ -1,6 +1,6 @@
 {
   "name": "abraham",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "know me a little by using a cli 🎸",
   "main": "cli.js",
   "scripts": {
