@@ -50,8 +50,9 @@ $ npm uninstall abraham
 # Credits
 
 - [Ink](https://github.com/vadimdemedes/ink): React for interactive command-line apps
-- [Ink-image](https://github.com/kevva/ink-image)
 - [Meow](https://github.com/sindresorhus/meow)
+
+Base on [The Sindre Sorhus CLI](https://github.com/sindresorhus/sindresorhus)
 
 # License
 
