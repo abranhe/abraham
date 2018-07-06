@@ -8,10 +8,11 @@
   },
   "engines": {
     "node": ">=7"
-  },"files": [
-		"lib",
-		"resources"
-	],
+  },
+  "files": [
+    "lib",
+    "resources"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/19cah/abraham.git"
