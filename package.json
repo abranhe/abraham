@@ -39,7 +39,7 @@
     "ink": "^0.4.1",
     "ink-select-input": "^1.0.0",
     "meow": "^5.0.0",
-    "open": "0.0.5",
+    "opn": "^5.3.0",
     "term-img": "^2.1.0",
     "terminal-image": "^0.1.1"
   },
