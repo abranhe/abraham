@@ -18,7 +18,7 @@
 $ npx abraham
 ```
 
-![eg](https://cdn.abraham.gq/projects/abraham/shot.png)
+![eg](https://cdn.abraham.gq/projects/abraham/screenshot.png)
 
 
 ## Find it online
