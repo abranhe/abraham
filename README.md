@@ -36,7 +36,7 @@ $ npm i abraham
 Alternatively using Yarn:
 
 ```
-$ yarn add --dev abraham
+$ yarn add abraham
 ```
 
 ## Uninstall
@@ -47,12 +47,17 @@ You will like to uninstall it, i know 😜
 $ npm uninstall abraham
 ```
 
-# Credits
+<details>
+  <summary> <h3>Credits</h3> </summary>
+ <br>
+  <ul>
+  <li><a href="https://github.com/vadimdemedes/ink">Ink</a>: React for interactive command-line apps</li>
+  <li><a href="https://github.com/sindresorhus/meow">Meow</a></li>
+  <ul>
+  <br>
+  <p>Base on <a href="https://github.com/sindresorhus/sindresorhus">The Sindre Sorhus CLI</a></p>
+</details>
 
-- [Ink](https://github.com/vadimdemedes/ink): React for interactive command-line apps
-- [Meow](https://github.com/sindresorhus/meow)
-
-Base on [The Sindre Sorhus CLI](https://github.com/sindresorhus/sindresorhus)
 
 # License
 
