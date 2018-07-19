@@ -47,18 +47,17 @@ You will like to uninstall it, i know 😜
 $ npm uninstall abraham
 ```
 
-<details>
-<summary><h1>Credits</h1></summary>
- <br>
-  <ul>
-    <li><a href="https://github.com/vadimdemedes/ink">Ink</a>: React for interactive command-line apps</li>
-    <li><a href="https://github.com/sindresorhus/meow">Meow</a></li>
-  </ul>
-  <br>
-  <p>Base on <a href="https://github.com/sindresorhus/sindresorhus">The Sindre Sorhus CLI</a></p>
-</details>
-
-
 # License
 
 [MIT](https://github.com/19cah/abraham/blob/master/LICENSE) License © [Abraham](https://github.com/19cah)
+
+<details>
+<summary>Credits ⚖</summary>
+ <br>
+ 
+  - [Ink](https://github.com/vadimdemedes/ink): React for interactive command-line apps
+- [Meow](https://github.com/sindresorhus/meow): A CLI app helper
+
+Base on [The Sindre Sorhus CLI](https://github.com/sindresorhus/sindresorhus)
+
+</details>
