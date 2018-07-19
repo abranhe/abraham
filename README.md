@@ -48,12 +48,12 @@ $ npm uninstall abraham
 ```
 
 <details>
-  <summary> <h3>Credits</h3> </summary>
+<summary><h1>Credits</h1></summary>
  <br>
   <ul>
-  <li><a href="https://github.com/vadimdemedes/ink">Ink</a>: React for interactive command-line apps</li>
-  <li><a href="https://github.com/sindresorhus/meow">Meow</a></li>
-  <ul>
+    <li><a href="https://github.com/vadimdemedes/ink">Ink</a>: React for interactive command-line apps</li>
+    <li><a href="https://github.com/sindresorhus/meow">Meow</a></li>
+  </ul>
   <br>
   <p>Base on <a href="https://github.com/sindresorhus/sindresorhus">The Sindre Sorhus CLI</a></p>
 </details>
