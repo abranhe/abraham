@@ -1,6 +1,6 @@
 {
   "name": "abraham",
-  "version": "2.0.5",
+  "version": "2.0.7",
   "description": "know me a little by using a cli 🎸",
   "main": "cli.js",
   "scripts": {
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/19cah/abraham.git"
+    "url": "https://github.com/abranhe/abraham.git"
   },
   "keywords": [
     "abraham",
@@ -23,14 +23,14 @@
   ],
   "author": {
     "name": "Carlos Abraham",
-    "web": "19cah.com",
-    "email": "abraham@19cah.com"
+    "web": "abranhe.com",
+    "email": "abraham@abranhe.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/19cah/abraham/issues"
+    "url": "https://github.com/abranhe/abraham/issues"
   },
-  "homepage": "https://github.com/19cah/abraham#readme",
+  "homepage": "https://abranhe.com",
   "bin": {
     "abraham": "./cli.js"
   },

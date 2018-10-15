@@ -2,33 +2,27 @@
 
 [![NPM](https://nodei.co/npm/abraham.png?compact=true)](https://nodei.co/npm/abraham/)
 
-## Know me using command line 🎸
+## Know me using the command line 🎸
 
-[![19cah](https://19cah.com/badge.svg)](https://github.com/19cah)
-[![Cash Me](https://cdn.abraham.gq/badges/cash-me.svg)](https://cash.me/$19cah)
-[![Build Status](https://img.shields.io/travis/19cah/abraham.svg?logo=travis)](https://travis-ci.org/19cah/abraham)
+[![abranhe](https://abranhe.com/badge.svg)](https://github.com/abranhe)
+[![Cash Me](https://cdn.abraham.gq/badges/cash-me.svg)](https://cash.me/$abranhe)
+[![Build Status](https://img.shields.io/travis/abranhe/abraham.svg?logo=travis)](https://travis-ci.org/abranhe/abraham)
 [![npm](https://img.shields.io/npm/v/abraham.svg)](https://www.npmjs.com/package/abraham)
 [![npm](https://img.shields.io/npm/dt/abraham.svg)](https://www.npmjs.com/package/abraham)
-[![license](https://img.shields.io/github/license/19cah/abraham.svg)](https://github.com/19cah/abraham/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/abranhe/abraham.svg)](https://github.com/19cah/abraham/blob/master/license)
 
 
-## Easier 🙀
+### Super easy 🙀
 
 ```
 $ npx abraham
 ```
 
-![eg](https://cdn.abraham.gq/projects/abraham/screenshot.png)
-
-
-## Find it online
-
-* [npm](https://www.npmjs.com/package/abraham)
-* [Yarn](https://yarnpkg.com/en/package/abraham)
+![screenshot](https://cdn.abranhe.com/projects/abraham/shoot.png)
 
 ## Install
 
-Using NPM:
+Using **NPM**:
 
 ```
 $ npm i abraham
@@ -41,7 +35,7 @@ $ yarn add abraham
 
 ## Uninstall
 
-You will like to uninstall it, i know 😜
+Probably you won't like to have it in you computer for a long time, I know 😜
 
 ```
 $ npm uninstall abraham
@@ -49,13 +43,13 @@ $ npm uninstall abraham
 
 # License
 
-[MIT](https://github.com/19cah/abraham/blob/master/LICENSE) License © [Abraham](https://github.com/19cah)
+[MIT](https://github.com/abranhe/abraham/blob/master/license) License © [Carlos Abraham](https://github.com/abranhe)
 
 <details>
-<summary>Credits ⚖</summary>
+<summary>Credits ⚖<br><i><sub>tap to expand...</sub></i></summary>
  <br>
- 
-  - [Ink](https://github.com/vadimdemedes/ink): React for interactive command-line apps
+
+- [Ink](https://github.com/vadimdemedes/ink): React for interactive command-line apps
 - [Meow](https://github.com/sindresorhus/meow): A CLI app helper
 
 Base on [The Sindre Sorhus CLI](https://github.com/sindresorhus/sindresorhus)
