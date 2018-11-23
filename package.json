@@ -1,6 +1,6 @@
 {
   "name": "abraham",
-  "version": "2.0.7",
+  "version": "2018.11.24",
   "description": "know me a little by using a cli 🎸",
   "main": "cli.js",
   "scripts": {
