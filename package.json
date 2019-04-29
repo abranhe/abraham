@@ -1,6 +1,6 @@
 {
 	"name": "abraham",
-	"version": "2019.4.29",
+	"version": "2019.4.30-0",
 	"description": "know me a little by using a cli 🎸",
 	"license": "MIT",
 	"repository": "abranhe/abraham",
@@ -15,9 +15,9 @@
 		"test": "xo && nyc ava"
 	},
 	"bugs": {
-    "url": "https://github.com/abranhe/abraham/issues"
-  },
-  "homepage": "https://p.abranhe.com/abraham",
+		"url": "https://github.com/abranhe/abraham/issues"
+	},
+	"homepage": "https://p.abranhe.com/abraham",
 	"files": [
 		"cli.js",
 		"ui.js",
