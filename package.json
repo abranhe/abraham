@@ -3,7 +3,7 @@
 	"version": "2019.4.29",
 	"description": "know me a little by using a cli 🎸",
 	"license": "MIT",
-	"repository": "abraham/abraham",
+	"repository": "abranhe/abraham",
 	"main": "cli.js",
 	"author": {
 		"name": "Abraham Hernandez",
@@ -14,6 +14,10 @@
 	"scripts": {
 		"test": "xo && nyc ava"
 	},
+	"bugs": {
+    "url": "https://github.com/abranhe/abraham/issues"
+  },
+  "homepage": "https://p.abranhe.com/abraham",
 	"files": [
 		"cli.js",
 		"ui.js",
