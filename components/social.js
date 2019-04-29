@@ -2,19 +2,23 @@
 
 const {h, Text} = require('ink'); // eslint-disable-line no-unused-vars
 const SelectInput = require('ink-select-input'); // eslint-disable-line no-unused-vars
-const open = require('opn');
+const open = require('open');
 
 const handleSelect = item => {
 	if (item.value) {
-		open(item.value);
+    open(item.value);
 	}
 
 	if (item.action) {
-		item.action();
+    item.action();
 	}
 };
 
 const items = [
+	{
+		label: 'abranhe.com',
+		value: 'https://abranhe.com'
+	},
 	{
 		label: 'Github',
 		value: 'http://github.com/abranhe'
@@ -28,12 +32,20 @@ const items = [
 		value: 'https://linkedin.com/in/abranhe'
 	},
 	{
-		label: 'Website',
-		value: 'https://abranhe.com/'
+		label: 'Blog',
+		value: 'https://blog.abranhe.com'
 	},
 	{
-		label: 'Blog',
-		value: 'https://blog.abranhe.com/'
+		label: 'npm',
+		value: 'https://npmjs.com/~abranhe'
+	},
+	{
+		label: 'pip',
+		value: 'https://pypi.org/user/abranhe'
+	},
+	{
+		label: 'maven',
+		value: 'https://search.maven.org/search?q=abranhe'
 	},
 	{
 		label: 'Contact',
@@ -45,24 +57,22 @@ const items = [
 	},
 	{
 		label: 'Feedback',
-		value: 'https://feedback.abranhe.com/?project=abraham cli&message=I kinda (do/don\'t) like this website because ...'
+		value: 'https://feedback.abranhe.com'
+	},
+	{
+		label: 'View Source Code',
+		value: 'https://github.com/abranhe/abraham'
 	},
 	{
 		label: 'Quit',
 		action() {
-			process.exit(); // eslint-disable-line unicorn/no-process-exit
+      process.exit(); // eslint-disable-line unicorn/no-process-exit
 		}
 	}
 ];
 
 module.exports = () => (
 	<div>
-		<br/>
-		<div>
-			<Text>i am Carlos Abraham Hernandez an open sourcerer and maker from Miami, Florida</Text>
-		</div>
-		<div>
-			<SelectInput items={items} onSelect={handleSelect}/>
-		</div>
+		<SelectInput items={items} onSelect={handleSelect}/>
 	</div>
 );

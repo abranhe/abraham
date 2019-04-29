@@ -1,49 +1,90 @@
 {
-  "name": "abraham",
-  "version": "2018.11.24",
-  "description": "know me a little by using a cli 🎸",
-  "main": "cli.js",
-  "scripts": {
-    "test": "xo"
-  },
-  "engines": {
-    "node": ">=7"
-  },
-  "files": [
-    "lib",
-    "resources"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/abranhe/abraham.git"
-  },
-  "keywords": [
-    "abraham",
-    "cli"
-  ],
-  "author": {
-    "name": "Carlos Abraham",
-    "web": "abranhe.com",
-    "email": "abraham@abranhe.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/abranhe/abraham/issues"
-  },
-  "homepage": "https://abranhe.com",
-  "bin": {
-    "abraham": "./cli.js"
-  },
-  "dependencies": {
-    "import-jsx": "^1.3.0",
-    "ink": "^0.4.1",
-    "ink-select-input": "^1.0.0",
-    "meow": "^5.0.0",
-    "opn": "^5.3.0",
-    "term-img": "^2.1.0",
-    "terminal-image": "^0.1.1"
-  },
-  "devDependencies": {
-    "xo": "^0.21.1"
-  }
+	"name": "abraham",
+	"version": "2019.4.29",
+	"description": "know me a little by using a cli 🎸",
+	"license": "MIT",
+	"repository": "abraham/abraham",
+	"main": "cli.js",
+	"author": {
+		"name": "Abraham Hernandez",
+		"email": "abraham@abranhe.com",
+		"url": "https://abraham.com"
+	},
+	"bin": "cli.js",
+	"scripts": {
+		"test": "xo && nyc ava"
+	},
+	"files": [
+		"cli.js",
+		"ui.js",
+		"helper.js",
+		"components"
+	],
+	"keywords": [
+		"cli",
+		"abraham",
+		"resume",
+		"showcase",
+		"portfolio"
+	],
+	"dependencies": {
+		"axios": "^0.18.0",
+		"got": "^9.6.0",
+		"import-jsx": "^1.3.0",
+		"ink": "^0.5.0",
+		"ink-big-text": "0.3.0",
+		"ink-select-input": "2.0.0",
+		"meow": "^5.0.0",
+		"open": "^6.2.0",
+		"ora": "^3.4.0",
+		"prop-types": "^15.6.1",
+		"terminal-link": "^1.3.0"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"babel-plugin-transform-react-jsx": "^6.24.1",
+		"codecov": "^3.0.1",
+		"eslint-config-xo-react": "^0.16.0",
+		"eslint-plugin-react": "^7.7.0",
+		"nyc": "^11.7.1",
+		"xo": "0.20.3"
+	},
+	"ava": {
+		"babel": {
+			"presets": [
+				"@ava/stage-4"
+			],
+			"plugins": [
+				[
+					"transform-react-jsx",
+					{
+						"pragma": "h",
+						"useBuiltIns": true
+					}
+				]
+			]
+		}
+	},
+	"xo": {
+		"extends": [
+			"xo-react"
+		],
+		"rules": {
+			"react/no-unused-prop-types": 1
+		},
+		"settings": {
+			"react": {
+				"pragma": "h"
+			}
+		},
+		"ignores": [
+      "components/repos.js"
+    ]
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	}
 }
